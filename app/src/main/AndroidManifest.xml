@@ -15,10 +15,6 @@
             android:name=".BottomNavActivity"
             android:label="@string/title_activity_bottom_nav"></activity>
         <activity
-            android:name=".ProductsActivity"
-            android:label="@string/title_activity_products"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".MainActivity"
             android:theme="@style/CustomDarkTheme" />
         <activity
