@@ -1,3 +1,42 @@
 <resources>
     <string name="app_name">T-Kart</string>
+    <string name="splash_logo">Splash Logo</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="t_kart_logo">T-kart Logo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="description_first">Enter your email and password for further log in purpose.</string>
+    <string name="description_second">Tell us your name so people know a little more about you.</string>
+    <string name="description_third">Almost done, one last step and you\'re good to go</string>
+
+    <string name="signup_title_first">Welcome..</string>
+    <string name="signup_title_second">Introduce yourself..</string>
+    <string name="signup_title_third">One last step..</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="title_activity_products">ProductsActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="cart">Cart</string>
+    <string name="my_account">Account</string>
+    <string name="settings">Settings</string>
+    <string name="about_us">About Us</string>
+    <string name="home">Home</string>
+    <string name="categories">Categories</string>
+    <string name="product_image">Product Image</string>
+    <string name="title_activity_bottom_nav">BottomNavActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
 </resources>

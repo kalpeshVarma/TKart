@@ -1,19 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintL"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context=".SplashScreenActivity">
+    android:animateLayoutChanges="true"
+    android:background="@color/colorPrimary">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/iv_logo"
+        android:layout_width="183dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/t_kart_logo"
+        android:cropToPadding="false"
+        android:soundEffectsEnabled="true"
+        android:src="@drawable/finaltklogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/logo"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_corners_white"
+        android:ems="15"
+        android:fontFamily="@font/greycliff_cf_regular"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/text_color_primary"
+        android:textColorHint="@color/text_color_secondary"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        app:layout_constraintVertical_bias="0.034"
+        app:hintEnabled="false"
+        app:passwordToggleTint="@color/text_color_secondary"
+        android:visibility="visible">
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners_white"
+            android:ems="15"
+            android:fontFamily="@font/greycliff_cf_regular"
+            android:hint="Password"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:textColor="@color/text_color_primary"
+            android:textColorHint="@color/text_color_secondary"
+            android:textCursorDrawable="@null"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressImageButton
+        android:id="@+id/btn_login"
+        android:layout_width="315dp"
+        android:layout_height="44dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/gradient_bg"
+        android:fontFamily="@font/greycliff_cf_regular"
+        android:text="@string/login"
+        android:textColor="@color/text_color_primary"
+        android:textSize="20sp"
+        app:initialCornerAngle="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_password"
+        app:layout_constraintVertical_bias="0.106"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+
+    <TextView
+        android:id="@+id/tv_newUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:fontFamily="@font/greycliff_cf_regular"
+        android:text="New to t-kart? Register Here."
+        android:textColor="@color/tv_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:layout_constraintVertical_bias="0.062" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
